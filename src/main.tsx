@@ -1,7 +1,8 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+
+import AppRouter from "./router/AppRouter";
 
 const savedTheme = localStorage.getItem("theme");
 
@@ -9,8 +10,8 @@ if (savedTheme === "dark") {
   document.documentElement.classList.add("dark");
 }
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+    <AppRouter />
+  </StrictMode>
+);
