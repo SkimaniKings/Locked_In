@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Define dark mode manually */
+:root {
+  --color-bg: white;
+  --color-text: black;
+}
+
+.dark {
+  --color-bg: black;
+  --color-text: white;
+}
